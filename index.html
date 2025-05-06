@@ -17,7 +17,7 @@
             background-image: url('https://i.imgur.com/xvhQqBN.jpg');
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: center 30%; /* Arka planı %30 yukarı kaydırdık */
+            background-position: center 30%;
             position: relative;
             overflow: hidden;
         }
@@ -28,7 +28,7 @@
             position: fixed;
             bottom: 0;
             left: 0;
-            padding: 20px 0;
+            padding: 20px 15px;
             background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
         }
         
@@ -38,20 +38,18 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             font-size: 24px;
             text-transform: uppercase;
-            padding: 0 15px;
         }
         
         .buttons {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: center;
             gap: 15px;
-            padding: 0 15px;
+            flex-wrap: wrap;
         }
         
         button {
-            padding: 15px 30px;
-            font-size: 18px;
+            padding: 12px 20px;
+            font-size: 16px;
             cursor: pointer;
             background-color: #000000;
             color: white;
@@ -59,8 +57,9 @@
             border-radius: 8px;
             transition: all 0.3s ease;
             font-weight: bold;
-            width: 100%;
-            max-width: 250px;
+            min-width: 140px;
+            flex: 1;
+            max-width: 200px;
         }
         
         button:hover {
@@ -100,31 +99,24 @@
             z-index: 1001;
         }
         
-        @media (min-width: 768px) {
-            body {
-                background-position: center 10%; /* Masaüstünde biraz daha fazla kaydırma */
-            }
-            .container {
-                padding-bottom: 50px;
-            }
+        @media (max-width: 480px) {
             .buttons {
-                flex-direction: row;
-                justify-content: center;
-                gap: 20px;
+                gap: 10px;
             }
             button {
-                width: auto;
-                padding: 12px 30px;
+                padding: 12px 15px;
+                font-size: 14px;
+                min-width: 120px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>PAVİLİON&CABANA</h1>
+        <h1>PAVİLİON AND CABANA</h1>
         <div class="buttons">
             <button onclick="openMenu()">MENU</button>
-            <button onclick="contactUs()">FOR İNFORMATİON</button>
+            <button onclick="contactUs()">FOR INFORMATION</button>
         </div>
     </div>
 
