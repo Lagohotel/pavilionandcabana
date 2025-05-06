@@ -9,25 +9,24 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             min-height: 100vh;
             background-image: url('https://i.imgur.com/xvhQqBN.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            padding-bottom: 50px;
         }
         .container {
             text-align: center;
-            background-color: rgba(255, 255, 255, 0.85);
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
             width: 85%;
             max-width: 500px;
-            backdrop-filter: blur(3px);
+            margin-bottom: 50px;
         }
         button {
             padding: 12px 30px;
@@ -40,6 +39,7 @@
             border-radius: 8px;
             transition: all 0.3s ease;
             font-weight: bold;
+            width: 200px;
         }
         button:hover {
             background-color: #333333;
@@ -47,9 +47,9 @@
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         }
         h1 {
-            color: #333;
+            color: white;
             margin-bottom: 25px;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             font-size: 24px;
             text-transform: uppercase;
         }
